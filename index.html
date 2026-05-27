@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puriphan Sawatudomphon | Consultant - Data & Platforms Portfolio</title>
+  
+  <!-- SEO Optimization Meta Tags -->
+  <meta name="description" content="Professional portfolio and interactive resume of Puriphan Sawatudomphon, Consultant in Data and Platforms. Specialized in digital measurement architectures, GA4 enterprise migrations, and analytics dashboards.">
+  <meta name="keywords" content="Puriphan Sawatudomphon, Data Consultant, Platform Engineer, GA4, Google Analytics, Adobe Analytics, BigQuery, SQL, Sydney, Bangkok, Portfolio, Interactive Resume">
+  <meta name="author" content="Puriphan Sawatudomphon">
+  
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Puriphan Sawatudomphon | Consultant - Data & Platforms">
+  <meta property="og:description" content="Explore the premium interactive resume and analytics portfolio of Puriphan Sawatudomphon.">
+  <meta property="og:url" content="https://pream500.github.io/">
+  <meta property="og:image" content="./Screenshot 2026-05-26 at 6.38.43 am.png">
+
+  <!-- Apple Touch & Web App Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#18181A">
+
+  <!-- Core Styling Import (No Frameworks, Clean Vanilla CSS) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ESM Application Core Engine -->
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Sticky Navigation Header (Glassmorphic Backdrop Filter)
+       ========================================================================== -->
+  <header class="header-nav" id="sticky-header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="logo-link">
+        <span class="nav-logo-dot"></span>
+        <span id="profile-name">Puriphan S.</span>
+      </a>
+
+      <!-- Desktop Anchor Navigation Links -->
+      <nav class="nav-links" id="desktop-navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <!-- Theme Switch Toggle Trigger (Sun/Moon inline SVG) -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle visual theme"></button>
+
+        <!-- Mobile Drawer Hamburger Icon -->
+        <button id="hamburger" class="hamburger" aria-label="Toggle Mobile Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Mobile Slide-Out Sidebar Navigation Drawer
+       ========================================================================== -->
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <nav style="display: flex; flex-direction: column; gap: 10px;">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </aside>
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+
+  <!-- ==========================================================================
+       Main Portfolio Section Blocks
+       ========================================================================== -->
+  <main>
+    
+    <!-- Hero / Landing Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      
+      <div class="section-container">
+        <div class="hero-grid">
+          
+          <!-- Personal Intro -->
+          <div class="hero-content">
+            <span class="eyebrow" style="color: var(--accent-color); font-weight: 600;">Welcome to my official CV space</span>
+            <h1 class="display-hero" id="hero-title-name">Puriphan Sawatudomphon</h1>
+            
+            <!-- Dynamic Typing Greeting Banner -->
+            <div class="typewriter-container">
+              <span class="typewriter-text" id="typewriter-target">Data & Platforms Consultant</span>
+            </div>
+            
+            <p class="body-default" id="hero-subtitle" style="margin-bottom: 32px; font-size: 1.15rem; max-width: 580px;">
+              Bridging the gap between business vision and advanced analytics engineering.
+            </p>
+            
+            <!-- Quick Action Capsule Targets -->
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" id="btn-hire">
+                Get In Touch
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </a>
+              <a href="#experience" class="btn btn-secondary" id="btn-view-cv">
+                View My History
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </a>
+              <button onclick="window.print()" class="btn btn-ghost" id="btn-print-cv" aria-label="Export resume to paper PDF format">
+                Print Resume / PDF
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Circular Portrait Photo Section -->
+          <div class="hero-avatar-frame">
+            <div class="avatar-backdrop"></div>
+            <div class="avatar-image-container" id="hero-avatar-container">
+              <!-- Dynamically populated profile image -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Biography Section -->
+    <section class="section-container reveal-on-scroll" id="about">
+      <div class="card-base" style="padding: 48px;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <span class="eyebrow" style="color: var(--accent-color);">Executive Summary</span>
+          <h2 class="heading-large" style="margin-bottom: 24px;">Professional Biography</h2>
+          <p class="body-default" id="about-text" style="font-size: 1.125rem; line-height: 1.68; color: var(--text-secondary);">
+            Loading biographical introduction summary...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Professional Timeline Section -->
+    <section class="section-container" id="experience">
+      <div class="section-title-wrap reveal-on-scroll">
+        <span class="eyebrow">Milestones</span>
+        <h2 class="heading-large">Professional Journey</h2>
+        <p class="section-subtitle">A detailed track record of my employment and engineering history.</p>
+      </div>
+
+      <div class="timeline-container" id="experience-timeline">
+        <!-- Timelines Dynamically Injected here -->
+      </div>
+    </section>
+
+    <!-- Education Block -->
+    <section class="section-container reveal-on-scroll" id="education">
+      <div class="card-base" style="border-top: 4px solid var(--accent-color);">
+        <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+          <div class="channel-icon-box" style="background-color: var(--accent-bg-soft); border-color: var(--accent-color);">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0;">Academic Record</span>
+            <h2 class="heading-primary" style="font-size: 1.5rem;">King Mongkut's Institute of Technology Ladkrabang</h2>
+          </div>
+        </div>
+        <p class="body-default" style="font-weight: 600; color: var(--accent-color); font-size: 1rem; margin-bottom: 8px;">
+          Bachelor’s Degree in Science, Major Applied Statistics | <span style="color:var(--text-secondary); font-size:0.9rem;">June 11, 2012 - May 30, 2016</span>
+        </p>
+        <p class="body-default" style="font-size: 0.95rem;">
+          Rigorous coursework focusing on statistical analysis, data modeling, computational mathematics, and probability theory, providing a deep analytical foundation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Category Columns (Progress Reveals on scroll) -->
+    <section class="section-container" id="skills">
+      <div class="section-title-wrap reveal-on-scroll">
+        <span class="eyebrow">Competence</span>
+        <h2 class="heading-large">Core Capabilities</h2>
+        <p class="section-subtitle">Refined core capabilities, tools, and strategic proficiencies.</p>
+      </div>
+
+      <div class="skills-grid" id="skills-container">
+        <!-- Dynamic skill segments injected here -->
+      </div>
+    </section>
+
+    <!-- Projects Portfolio with Filters -->
+    <section class="section-container" id="projects">
+      <div class="section-title-wrap reveal-on-scroll">
+        <span class="eyebrow">Showcase</span>
+        <h2 class="heading-large">Featured Implementations</h2>
+        <p class="section-subtitle">Real-world analytics pipelines and strategic implementations.</p>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="projects-filter-bar" id="projects-filter-bar">
+        <!-- Buttons injected dynamically -->
+      </div>
+
+      <!-- Main Project Cards Grid -->
+      <div class="grid-3" id="projects-grid">
+        <!-- Cards generated dynamically -->
+      </div>
+    </section>
+
+    <!-- Contact Form with Simulated/Real Actions (Web3Forms) -->
+    <section class="section-container" id="contact">
+      <div class="section-title-wrap reveal-on-scroll">
+        <span class="eyebrow">Connection</span>
+        <h2 class="heading-large">Initiate Correspondence</h2>
+        <p class="section-subtitle">Have a project, strategy session, or employment opportunity? Leave a note.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Channels & Social Connections -->
+        <div class="contact-info-wrap" id="contact-info">
+          <p class="contact-info-desc">
+            Feel free to connect directly through any of my active communication streams, or utilize the message terminal to deliver a letter straight to my mailbox.
+          </p>
+          
+          <div class="contact-channels" id="contact-channels-container">
+            <!-- Channels dynamically rendered -->
+          </div>
+        </div>
+
+        <!-- Form Card Container -->
+        <div class="card-base contact-form-card reveal-on-scroll" style="box-shadow: var(--shadow-md);">
+          <!-- Dynamic Simulated/Real response boxes -->
+          <div class="form-alert" id="contact-alert"></div>
+          
+          <form id="contact-form" autocomplete="on">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Puriphan Sawatudomphon" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="spuriphan@gmail.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject Topic</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Enterprise GA4 Migration Session">
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message *</label>
+              <textarea id="message" name="message" class="form-input" placeholder="Hello Puriphan, I would love to collaborate on..." required></textarea>
+            </div>
+
+            <!-- Send button Capsule shape -->
+            <button type="submit" class="btn btn-primary" id="btn-submit" style="width: 100%;">
+              Send Correspondence Letter
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Details Overlay Modal (Focus Trapped, Keyboard Accessible, Apple Style)
+       ========================================================================== -->
+  <dialog class="modal-overlay" id="project-modal" aria-modal="true" role="dialog">
+    <div class="modal-container">
+      <div class="modal-header-gradient"></div>
+      
+      <!-- Rounded Escape Button -->
+      <button id="modal-close" class="modal-close-btn" aria-label="Close Project Detail Modal">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="modal-body" id="modal-body-content">
+        <!-- Rendered project detail data will load dynamically -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       Footer (Decoupled details & Social Channels)
+       ========================================================================== -->
+  <footer class="footer-wrap">
+    <div class="footer-container">
+      <div class="footer-copyright">
+        &copy; <span id="footer-year">2026</span> <span id="footer-name" style="font-weight:600;">Puriphan Sawatudomphon</span>. All rights reserved.
+      </div>
+      
+      <!-- Social anchors -->
+      <div class="footer-links" id="footer-socials">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
